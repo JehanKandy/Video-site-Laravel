@@ -19,7 +19,14 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $vid->uploader }}</td>
                     <td>{{ $vid->video_title }}</td>
-                    <td>{{ $vid->tags}}</td>
+                    <td>                
+                        @php
+                            $schedule = json_decode($vid->tags);
+                        @endphp
+                        @foreach ($vid_tags as $tag)
+                            {{ $tag }}<br>
+                        @endforeach
+                    </td>
                     <td>{{ $vid->created_at}}</td>
                     <td>{{ $vid->updated_at}}</td>
                     <td>Action</td>
