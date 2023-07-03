@@ -19,7 +19,7 @@ class VideoM extends Model
         'updated_at',
     ];
   
-    public function VideoTags()
+    public function videos_tags()
     {
         return $this->hasMany(VideoTags::class, 'v_id', 'id');
     }
