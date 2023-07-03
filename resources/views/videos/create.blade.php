@@ -39,9 +39,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <input type="reset" value="Clear" class="btn btn-secondary">
+                    <input type="reset" value="Clear" class="btn btn-secondary" style="width: 100%;">
                 </div>
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <input type="submit" value="Add Video" class="btn btn-success">
+                </div>
             </div>
         </form>
     </div>
