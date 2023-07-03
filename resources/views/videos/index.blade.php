@@ -18,7 +18,9 @@
                 @foreach ($video as $vid)
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $vid->uploader }}</td>
-                    <td>{{}}</td>
+                    <td>{{ $vid->tags}}</td>
+                    <td>{{ $vid->created_at}}</td>
+                    <td>{{ $vid->updated_at}}</td>
                 @endforeach
             </tbody>
         </table>
