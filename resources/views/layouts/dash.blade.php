@@ -144,6 +144,12 @@
                         if(auth()->user()->role == 1){
                             echo "Admin Dashboard";
                         }
+                        elseif (auth()->user()->role == 2) {
+                            echo "Staff Dashboard";
+                        }
+                        elseif (auth()->user()->role == 3) {
+                            echo "Client Dashboard";
+                        }
                     @endphp
 
                 </h2>
