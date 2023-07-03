@@ -47,7 +47,8 @@ class VideoController extends Controller
         $video->description = $request->description;
 
         if($request->hasFile('video')){
-            $vid_path = 
+            $vid_path = $request->file('video')->store('video', ['disk' => 'my_files']);
+            $video->video = $vid_path;
         }
 
 
