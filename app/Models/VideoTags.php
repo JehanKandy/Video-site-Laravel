@@ -13,7 +13,7 @@ class VideoTags extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'tags',
-        'v_id',
+        'video_id',
     ];
   
     public function videos()
