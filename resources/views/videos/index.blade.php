@@ -9,6 +9,7 @@
                     <th>Video Uploader</th>
                     <th>Video Description</th>
                     <th>VideoTitle</th>
+                    <th>Video Tags</th>
                     <th>Add Date</th>
                     <th>Last Update</th>
                     <th>Action</th>
@@ -19,7 +20,9 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $vidoe->uploader }}</td>
                     <td>{{ $vidoe->description }}</td>
-                    <td>{{ $vidoe->uploader }}</td>
+                    <td>{{ $vidoe->vidoes_tags->tags }}</td>
+                    <td>{{ $vidoe->created_at }}</td>
+                    <td>{{ $vidoe->updated_at }}</td>
                 @endforeach
             </tbody>
         </table>
