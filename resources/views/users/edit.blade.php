@@ -1,5 +1,9 @@
 @extends('layouts.dash')
 
+@if (Auth::user()->role == 2 || Auth::user()->role == 3)
+<script>window.location = "/users";</script>
+@endif
+
 @section('content')
 
     <div class="admin-card">
