@@ -13,12 +13,12 @@
             <div class="row">
                 <div class="col-lg-6">
                     <label for="uploader">Video Uploader</label>
-                    <input type="text" id="" class="form-control" value="@php echo Auth::user()->name; @endphp" disabled>
+                    <input type="text" id="" class="form-control" value="@php echo Auth::user()->name; @endphp" disabled><br>
                     <input type="hidden" name="uploader" value="@php echo Auth::user()->name; @endphp">
                 </div> 
                 <div class="col-lg-6">
                     <label for="video_title">Video Title</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="video_title" id="" class="form-control"><br>
                 </div>
             </div>
 
