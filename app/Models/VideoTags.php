@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class VideoTags extends Model
 {
     use HasFactory;
+    
 }
