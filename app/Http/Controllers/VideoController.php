@@ -42,6 +42,8 @@ class VideoController extends Controller
 
         $video = new VideoM;
         $video->uploader = $request->uploader;
+        $video->video_title = $request->video_title;
+        $video->description = $request->description;
     }
 
     /**
