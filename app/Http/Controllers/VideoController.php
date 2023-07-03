@@ -38,6 +38,8 @@ class VideoController extends Controller
             'tags' => 'required|string|max:50',
             'video' => 'required|file|mimetypes:video/mp4',
         ]);
+
+        
     }
 
     /**

@@ -36,11 +36,9 @@ return [
             'throw' => false,
         ],
         
-        'videos' => [
+        'my_files' => [
             'driver' => 'local',
-            'root' => public_path('videos'),
-            'url' => env('APP_URL').'/videos',
-            'visibility' => 'public',
+            'root'   => public_path() . '/'
         ],
 
         'public' => [
