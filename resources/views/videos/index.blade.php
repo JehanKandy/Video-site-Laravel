@@ -33,7 +33,21 @@
                     </td>
                     <td>{{ $vid->created_at}}</td>
                     <td>{{ $vid->updated_at}}</td>
-                    <td>Action</td>
+                    <td>
+                        <a href="{{ url('/videos/' . $vid->id) }}" title="View videos "><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                        
+                        @if (auth()->user()->role == 1 || auth()->user()->role == 2)
+                            <a href="{{ url('/videos/' . $vid->id . '/edit') }}" title="Edit video"><button class="btn btn-primary btn-sm"><i class="fas fa-edit" aria-hidden="true"></i> Edit</button></a>
+                        @endif
+
+                        @if (auth()->user()->role == 1)
+                            <form method="POST" action="{{ url('/videos' . '/' . $vid->id) }}" accept-charset="UTF-8" style="display:inline">
+                                {{ method_field('DELETE') }}
+                                {{ csrf_field() }}
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete video" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fas fa-calendar-times" aria-hidden="true"></i> Delete</button>
+                            </form>                            
+                        @endif                            
+                    </td>
                 @endforeach
             </tbody>
         </table>
