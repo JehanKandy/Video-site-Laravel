@@ -94,7 +94,7 @@
 <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div class="bg-white" id="sidebar-wrapper">
-        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fa-sharp fa-solid fa-graduation-cap"></i></div>
+        <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fa-sharp fa-solid fas fa-video"></i> Videos</div>
         <div class="list-group list-group-flush my-3">
             <a href="
                     {{-- @php
