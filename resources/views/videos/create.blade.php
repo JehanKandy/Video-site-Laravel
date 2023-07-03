@@ -5,7 +5,8 @@
     <div class="admin-card">
         <a href="{{ url('/videos') }}"><button class="btn btn-primary">Back</button></a><br><br>
         <hr>
-        <h2>Add New Video</h2><br>
+        <h2>Add New Video</h2>
+        <h4 style="color: red">Important</h4><br>
 
         <form action="{{ url('/videos') }}" method="POST" enctype="multipart/form-data">
             @csrf
