@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\VideoM;
+use App\Models\VideoTags;
 use Illuminate\Http\Request;
 
 class VideoController extends Controller
@@ -44,6 +45,16 @@ class VideoController extends Controller
         $video->uploader = $request->uploader;
         $video->video_title = $request->video_title;
         $video->description = $request->description;
+
+        if($request->hasFile('video')){
+            $vid_path = 
+        }
+
+
+        $video_tag = new VideoTags;
+        $video_tag->tags = $request->tags;
+
+
     }
 
     /**
