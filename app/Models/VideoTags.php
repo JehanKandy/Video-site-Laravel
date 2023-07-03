@@ -18,7 +18,7 @@ class VideoTags extends Model
   
     public function video()
     {
-        return $this->belongsTo(VideoTags::class);        
+        return $this->belongsTo(VideoM::class);        
     }
 
 }
