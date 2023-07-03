@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Pacifico&family=Roboto&family=Rubik&display=swap");
+:root {
+  --card-color: rgb(255, 255, 255);
+  --card-title: "Kanit", sans-serif;
+}
+
+.main-content {
+  background: linear-gradient(to bottom left, #3399ff 0%, #ff33cc 100%);
+  height: 100vh;
+}
+
+.main-btns {
+  padding: 25% 0;
+}
+
+.login-btn, .reg-btn {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 2px;
+}
+
+.btn-login {
+  margin-bottom: 10px;
+}
+
+.admin-card {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.icon-admin {
+  font-size: 50px;
+}
+
+.title-card {
+  font-size: 30px;
+  font-family: var(--card-title);
+}
+
+.body-card {
+  font-size: 20px;
+  font-family: var(--card-title);
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 620px) {
+  .main-btns {
+    padding: 50% 0;
+  }
+  .admin-card {
+    padding: 20px;
+  }
+}
