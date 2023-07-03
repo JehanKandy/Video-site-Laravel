@@ -12,8 +12,8 @@ class VideoTags extends Model
     protected $table = 'videos_tags';
     protected $primaryKey = 'id';
     protected $fillable = [
-        'v_id',
         'tags',
+        'v_id',
     ];
   
     public function videos()
