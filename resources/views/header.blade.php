@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Video Site</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4503/4503915.png">
 
 
     <!-- Fonts -->
