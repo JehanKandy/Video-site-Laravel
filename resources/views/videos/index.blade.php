@@ -21,7 +21,7 @@
                     <td>{{ $vid->video_title }}</td>
                     <td>                
                         @php
-                            $schedule = json_decode($vid->tags);
+                            $vid_tags = json_decode($vid->tags);
                         @endphp
                         @foreach ($vid_tags as $tag)
                             {{ $tag }}<br>
