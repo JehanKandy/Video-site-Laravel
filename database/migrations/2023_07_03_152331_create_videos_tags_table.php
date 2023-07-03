@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('videos_tags', function (Blueprint $table) {
             $table->id();
-            $table->integer('video_id');
+            $table->integer('video_id')->unsigned();
             $table->string('tags');
+            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
