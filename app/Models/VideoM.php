@@ -9,8 +9,9 @@ use App\Models\VideoTags;
 class VideoM extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'id',
+    protected $table = 'videos';
+    protected $primaryKey = 'id';
+    protected $fillable = [       
         'video_title',
         'uploader',
         'description',
