@@ -7,6 +7,7 @@
         <hr>
         <h2>Add New Video</h2>
         <h4 style="color: red">Important</h4><br>
+        <p>use following method to add "tags" of the Video</p>
 
         <form action="{{ url('/videos') }}" method="POST" enctype="multipart/form-data">
             @csrf
