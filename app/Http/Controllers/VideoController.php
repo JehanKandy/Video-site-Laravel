@@ -42,7 +42,7 @@ class VideoController extends Controller
         $video->uploader = $request->uploader;
         $video->video_title = $request->video_title;
         $video->description = $request->description;
-
+        $video->video_tags = $request->video_tags;
         if($request->hasFile('video')){
             $vid_path = $request->file('video')->store('video', ['disk' => 'my_files']);
             $video->video = $vid_path;

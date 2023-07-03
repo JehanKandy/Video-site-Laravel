@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <label for="tags">Tags</label>
-                    <input type="text" name="tags" id="" class="form-control"><br>
+                    <input type="text" name="video_tags" id="" class="form-control"><br>
                 </div>
                 <div class="col-lg-6">
                     <label for="video">Video</label>
