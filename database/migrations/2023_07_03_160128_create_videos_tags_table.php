@@ -16,7 +16,6 @@ return new class extends Migration
             $table->unsignedBigInteger('v_id');
             $table->string('tags');            
             $table->timestamps();
-            $table->foreign('v_id')->references('id')->on('videos')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
