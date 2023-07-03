@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('video_title');
             $table->string('uploader');
             $table->longText('description');
-            $table->json('video_tags');
             $table->timestamps();
         });
     }
