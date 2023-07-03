@@ -28,7 +28,7 @@
                             $vid_tags = json_decode($vid->video_tags);
                         @endphp
                         @foreach ($vid_tags as $tags)
-                            {{ $tags }}<br>
+                            {{ $tags }},
                         @endforeach
                     </td>
                     <td>{{ $vid->created_at}}</td>
