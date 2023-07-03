@@ -50,10 +50,13 @@ class VideoController extends Controller
             $vid_path = $request->file('video')->store('video', ['disk' => 'my_files']);
             $video->video = $vid_path;
         }
+        $video->save();
+
         $video_tag = new VideoTags;
         $video_tag->tags = $request->tags;
+        
+        
 
-        $video->save();
         $video_tag->save();
 
     }
