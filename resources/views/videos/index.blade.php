@@ -25,10 +25,10 @@
                     <td>{{ $vid->video_title }}</td>
                     <td>                
                         @php
-                            $vid_tags = json_decode($vid->tags);
+                            $vid_tags = json_decode($vid->video_tags);
                         @endphp
-                        @foreach ($vid_tags as $tag)
-                            {{ $tag }}<br>
+                        @foreach ($vid_tags as $tags)
+                            {{ $tags }}<br>
                         @endforeach
                     </td>
                     <td>{{ $vid->created_at}}</td>
