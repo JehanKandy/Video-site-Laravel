@@ -13,10 +13,10 @@ class VideoController extends Controller
      */
     public function index()
     {
-        $vidoes = VideoM::with('VideoTags')->get();
-        $vidoes_tags = VideoTags::with('Video')->get();
+        $videos = VideoM::with('VideoTags')->get();
+        $videos_tags = VideoTags::with('Video')->get();
 
-        return view('videos.index', compact('vidoes', 'vidoes_tags'));
+        return view('videos.index', compact('videos', 'videos_tags'));
     }
 
     /**

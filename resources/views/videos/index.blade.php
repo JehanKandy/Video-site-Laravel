@@ -16,13 +16,13 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($vidoes as $vidoe)
+                @foreach ($videos as $video)
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $vidoe->uploader }}</td>
-                    <td>{{ $vidoe->description }}</td>
-                    <td>{{ $vidoe->vidoes_tags->tags }}</td>
-                    <td>{{ $vidoe->created_at }}</td>
-                    <td>{{ $vidoe->updated_at }}</td>
+                    <td>{{ $video->uploader }}</td>
+                    <td>{{ $video->description }}</td>
+                    <td>{{ $video->videos_tags->tags }}</td>
+                    <td>{{ $video->created_at }}</td>
+                    <td>{{ $video->updated_at }}</td>
                 @endforeach
             </tbody>
         </table>
