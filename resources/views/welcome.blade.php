@@ -26,5 +26,11 @@
 
             @endif            
         </div> --}}
+
+        <div class="container">
+            All Videoss
+            <a href="{{ route('login') }}">login here</a>
+        </div>
+
     </body>
 </html>
