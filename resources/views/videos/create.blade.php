@@ -10,7 +10,15 @@
         <form action="{{ url('/videos') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
-            
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="uploader">Video Uploader</label>
+                    <input type="text" id="" class="form-control" value="@php echo Auth::user()->name; @endphp" disabled>
+                    <input type="hidden" name="uploader" value="@php echo Auth::user()->name; @endphp">
+                </div> 
+                <div class="col-lg-6"></div>
+            </div>
+
         </form>
     </div>
 @endsection
