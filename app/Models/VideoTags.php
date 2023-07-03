@@ -18,7 +18,7 @@ class VideoTags extends Model
   
     public function video()
     {
-        return $this->hasMany(VideoM::class, 'v_id', 'id');
+        return $this->hasMany(VideoM::class, 'videos_id', 'id');
     }
 
 }
