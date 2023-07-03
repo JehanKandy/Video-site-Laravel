@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('videos_tags', function (Blueprint $table) {
             $table->id();
-            $table->integer('video_id');
+            $table->unsignedBigInteger('video_id');
             $table->string('tags');            
             $table->timestamps();
+            $table->foreign('video_id')->references('id')->on('videos')->onDelete('cascade');
         });
     }
 

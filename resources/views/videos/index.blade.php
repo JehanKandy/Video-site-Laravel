@@ -17,7 +17,8 @@
             </thead>
             <tbody>
                 @foreach ($videos as $video)
-                    <td>{{ $video->videos_tags->tags }}</td>
+                    <td>{{ $video->first() }}</td>
+                    <td>{{ $video->$videos_tags->tags }}</td>
 
 
                 @endforeach
