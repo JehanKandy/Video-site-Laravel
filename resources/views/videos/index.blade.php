@@ -7,7 +7,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Video Uploader</th>
-                    <th>VideoTitle</th>
+                    <th>Video Title</th>
                     <th>Video Tags</th>
                     <th>Add Date</th>
                     <th>Last Update</th>
@@ -18,6 +18,7 @@
                 @foreach ($video as $vid)
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $vid->uploader }}</td>
+                    <td>{{ $vid->video_title }}</td>
                     <td>{{ $vid->tags}}</td>
                     <td>{{ $vid->created_at}}</td>
                     <td>{{ $vid->updated_at}}</td>
