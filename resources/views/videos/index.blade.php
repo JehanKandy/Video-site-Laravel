@@ -16,7 +16,7 @@
             </thead>
             <tbody>
                 @foreach ($video as $vid)
-                    <td>{{ $loop->iteration }}</td>
+                    <td><b>{{ $loop->iteration }}</b></td>
                     <td>{{ $vid->uploader }}</td>
                     <td>{{ $vid->video_title }}</td>
                     <td>                
