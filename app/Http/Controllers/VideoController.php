@@ -52,13 +52,6 @@ class VideoController extends Controller
         }
         $video->save();
 
-        $video_tag = new VideoTags;
-        $video_tag->tags = $request->tags;
-        
-        
-
-        $video_tag->save();
-
     }
 
     /**
