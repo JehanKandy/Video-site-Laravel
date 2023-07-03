@@ -96,10 +96,48 @@
     <div class="bg-white" id="sidebar-wrapper">
         <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom"><i class="fa-sharp fa-solid fa-graduation-cap"></i></div>
         <div class="list-group list-group-flush my-3">
-            <a href="{{url('/admin')}}" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+            <a href="
+                    {{-- @php
+                        if(auth()->user()->role == 1){
+                            header("Location:admin");
+                        }
+                        elseif (auth()->user()->role == 2) {
+                            header("Location:staff");
+                        }
+                        elseif (auth()->user()->role == 3) {
+                            header("Location:client");
+                        }
+                    @endphp --}}
+
+                    @php
+                    if(auth()->user()->role == 1){
+                    @endphp
+                    {{url('/admin')}} 
+                    @php
+                    }elseif(auth()->user()->role == 2){
+                    @endphp
+                    {{url('/staff')}} 
+                    @php  
+                    }elseif(auth()->user()->role == 3){
+                    @endphp
+                    {{url('/client')}} 
+                    @php  
+                    }                    
+                    @endphp
+
+                    " class="list-group-item list-group-item-action bg-transparent second-text active"><i
                     class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
             <a href="{{url('/users')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-user-tie me-2"></i>All Users</a>
+                    class="fas fa-user-tie me-2"></i>Users</a>
+            <a href="{{url('/train_routes')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-subway me-2"></i>Train Routes</a>
+            <a href="{{url('/comments')}}" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="fas fa-comments me-2"></i>Comments</a>
+            <a href="" class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                    class="fas fa-tachometer-alt me-2"></i>
+                    {{-- <span id="time"></span> --}}
+                    <span id = "clock" onload="currentTime()"></span>
+                    </a>
 
             
         </div>
