@@ -13,7 +13,7 @@ class VideoController extends Controller
     public function index()
     {
         $video = VideoM::join('videos_tags','videos_tags.video_id', '=', 'videos.id')
-                        ->get(['videos.video_title','videos.uploader','videos.description','videos.created_at','videos.updated_at']);
+                        ->get(['videos.video_title','videos.uploader','videos.description','videos.created_at','videos.updated_at', 'videos_tags.tags']);
     
         
         return view('videos.index', compact('video'));

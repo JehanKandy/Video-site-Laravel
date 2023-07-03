@@ -16,11 +16,8 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($videos as $video)
-                    <td>{{ $video->first() }}</td>
-                    <td>{{ $video->$videos_tags->tags }}</td>
-
-
+                @foreach ($video as $vid)
+                    <td>{{ $vid-> }}</td>
                 @endforeach
             </tbody>
         </table>
