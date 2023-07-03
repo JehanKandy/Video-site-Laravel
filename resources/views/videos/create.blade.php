@@ -18,7 +18,7 @@
                 </div> 
                 <div class="col-lg-6">
                     <label for="video_title">Video Title</label>
-                    
+                    <input type="text" name="" id="" class="form-control">
                 </div>
             </div>
 
