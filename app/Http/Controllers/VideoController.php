@@ -49,7 +49,7 @@ class VideoController extends Controller
         }
         $video->save();
 
-        
+        return redirect('/videos');
 
     }
 
