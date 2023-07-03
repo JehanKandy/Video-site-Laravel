@@ -32,7 +32,11 @@ class VideoController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $this->validate($request, [
+            'video_title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'video' => 'required|file|mimetypes:video/mp4',
+        ]);
     }
 
     /**
