@@ -21,6 +21,7 @@
                     <td>{{ $vid->tags}}</td>
                     <td>{{ $vid->created_at}}</td>
                     <td>{{ $vid->updated_at}}</td>
+                    <td>Action</td>
                 @endforeach
             </tbody>
         </table>
