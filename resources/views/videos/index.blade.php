@@ -2,6 +2,10 @@
 
 @section('content')
     <div class="admin-card">
+
+        <a href="{{ url('videos/create') }}"><button class="btn btn-success"><i class="fas fa-video"></i> Add New Video</button></a><br><br>
+        
+
         <table class="table">
             <thead class="table-primary">
                 <tr>
