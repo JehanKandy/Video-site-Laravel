@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\VideoM;
+use App\Models\VideoTags;
 use Illuminate\Http\Request;
 
 class VideoController extends Controller
@@ -11,7 +13,10 @@ class VideoController extends Controller
      */
     public function index()
     {
-        //
+        $vidoes = VideoM::with('videos')->get();
+        $vidoes_tags = VideoTags::with('video_tags')->get();
+
+        return view('videos.index', compact('videos', 'video_tags'));
     }
 
     /**
