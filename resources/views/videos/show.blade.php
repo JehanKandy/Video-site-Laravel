@@ -21,5 +21,14 @@
                 <p>{{ $video->description }}</p>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <video width="400" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support HTML video.
+                  </video>
+            </div>
+        </div>
     </div>
 @endsection
