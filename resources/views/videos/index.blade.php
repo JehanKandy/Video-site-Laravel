@@ -1,5 +1,14 @@
 @extends('layouts.dash')
 
+<style>
+    .tags{
+        padding: 5px 10px;
+        background-color: rgb(74, 172, 218);
+        border-radius: 5px;
+        color: white;
+    }
+</style>
+
 @section('content')
     <div class="admin-card">
 
