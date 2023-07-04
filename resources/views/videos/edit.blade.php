@@ -1,6 +1,6 @@
 @extends('layouts.dash')
 
-@if ((auth()->user()->name != $video->uploader && auth()->user()->role == 3) || (auth()->user()->name != $video->uploader && auth()->user()->role == 2))
+@if ((auth()->user()->name != $video->uploader && auth()->user()->role == 3))
 <script>window.location = "/videos";</script>
 @endif
 
