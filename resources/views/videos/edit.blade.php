@@ -27,6 +27,7 @@
                     </div>  
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-lg-12">
                     <label for="description">Video Description</label>
