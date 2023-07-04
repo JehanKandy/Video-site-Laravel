@@ -19,6 +19,11 @@
                         <input type="text" name="uploader" value="{{ $video->uploader }}" class="form-control" disabled>
                         <input type="hidden" name="uploader" value="{{ $video->uploder }}">     
                     </div>
+                    <div class="form-group">
+                        <label for="uploader">Video Title</label>
+                        <input type="text" name="uploader" value="{{ $video->uploader }}" class="form-control" disabled>
+                        <input type="hidden" name="uploader" value="{{ $video->uploder }}">     
+                    </div>
                 </div>
                 <div class="col-lg-6"></div>
             </div>
