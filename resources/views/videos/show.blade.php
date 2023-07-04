@@ -51,7 +51,8 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                
+                <h5>Video Uplaod Date</h5>
+                <h4>{{ $video->created_at }}</h4>
             </div>
             <div class="col-lg-6"></div>
         </div>
