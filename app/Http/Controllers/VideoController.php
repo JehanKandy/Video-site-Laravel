@@ -101,6 +101,6 @@ class VideoController extends Controller
     {
         $video = VideoM::find($id);
         $video->delete();
-        return view('/videos');
+        return view('/videos.index');
     }
 }
