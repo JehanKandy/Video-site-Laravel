@@ -50,6 +50,11 @@
                     <p>When Update the tags of the video use this method ["tag1","tag2","tag3",...]</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <input type="submit" value="Update Video Data" class="btn btn-success" style="width: 100%">
+                </div>
+            </div>
         </form>
 
     </div>
