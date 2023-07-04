@@ -32,7 +32,7 @@
             <div class="col-lg-6">
                 <h5>Tags</h5>
                 @php
-                    $vid_tags = json_decode($vid->video_tags);
+                    $vid_tags = json_decode($video->video_tags);
                 @endphp
                 @foreach ($vid_tags as $tags)
                     {{ $tags }},
