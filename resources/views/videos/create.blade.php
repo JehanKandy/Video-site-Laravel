@@ -11,6 +11,8 @@
         <p style="color: red">["tag1","tag2","tag3",....]</p>
         <br>
 
+        
+
         <form action="{{ url('/videos') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
