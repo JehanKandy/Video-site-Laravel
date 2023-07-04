@@ -9,6 +9,17 @@
         <a href="{{ url('/videos') }}"><button class="btn btn-primary">Back</button></a><br>
         <hr>
         <h2>Edit Video</h2><hr>
+        @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Errors : </strong> You got Following Errors while validation this form<br>
+                    <b>{{ $error }}</b>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endforeach
+        </ul>
+        @endif
         <form action="{{ url('videos/'. $video->id) }}" method="POST">
             @csrf
             @method("PATCH")
