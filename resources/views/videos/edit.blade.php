@@ -1,5 +1,9 @@
 @extends('layouts.dash')
 
+@if ((auth()->user()->name != $video->uploader && auth()->user()->role == 3) || (auth()->user()->name != $video->uploader && auth()->user()->role == 2))
+<script>window.location = "/videos";</script>
+@endif
+
 @section('content')
     <div class="admin-card">
         <a href="{{ url('/video') }}"><button class="btn btn-primary">Back</button></a><br>
