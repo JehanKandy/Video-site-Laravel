@@ -49,6 +49,7 @@
                 @endforeach
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-lg-6">
                 <h5>Video Uplaod Date</h5>
