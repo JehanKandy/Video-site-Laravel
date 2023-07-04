@@ -14,7 +14,7 @@
                 <h4>{{ $video->video_title }}</h4>
             </div>
         </div>
-        <br><br>
+        <hr>
         <div class="row">
             <div class="col-lg-12">
                 <h5>Video Description</h5>
