@@ -27,6 +27,12 @@
                     </div>  
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label for="description">Video Description</label>
+                    <textarea name="description" id="" cols="30" rows="10" class="form-control" style="resize: none;"></textarea><br>
+                </div>
+            </div>
         </form>
 
     </div>
