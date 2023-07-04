@@ -50,7 +50,7 @@
                             <a href="{{ url('/videos/' . $vid->id . '/edit') }}" title="Edit video"><button class="btn btn-primary btn-sm"><i class="fas fa-edit" aria-hidden="true"></i> Edit</button></a>
                         @endif
 
-                        @if (auth()->user()->role == 1)
+                        @if (auth()->user()->role == 1 || auth()->user()->name == $vid->uploader)
                             <form method="POST" action="{{ url('/videos' . '/' . $vid->id) }}" accept-charset="UTF-8" style="display:inline">
                                 {{ method_field('DELETE') }}
                                 {{ csrf_field() }}
