@@ -14,5 +14,10 @@
                 <h4>{{ $video->video_title }}</h4>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h5>Video Description</h5>
+            </div>
+        </div>
     </div>
 @endsection
