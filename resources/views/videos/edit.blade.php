@@ -34,6 +34,15 @@
                     <textarea name="description" id="" cols="30" rows="10" class="form-control" style="resize: none;">{{ $video->description }}</textarea><br>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <video width="400" controls>
+                        <source src="{{ URL::asset("$video->video") }}" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
         </form>
 
     </div>
