@@ -47,7 +47,7 @@
                     <input type="text" name="video_tags" value="{{ $video->video_tags }}" class="form-control" >  
                     <hr>
                     <h4 style="color: red">Important</h4>
-                    <p>When Update the tags of the video use this method ["tag1","tag2","tag3",...]</p>
+                    <p>When Update the tags of the video use this method {{ $video->video_tags }}</p>
                 </div>
             </div>
             <hr>
