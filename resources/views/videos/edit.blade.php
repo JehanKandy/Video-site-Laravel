@@ -36,6 +36,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6">
+                    <h5>Video</h5>
                     <video width="400" controls>
                         <source src="{{ URL::asset("$video->video") }}" type="video/mp4">
                         Your browser does not support HTML video.
