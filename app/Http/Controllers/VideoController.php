@@ -99,6 +99,8 @@ class VideoController extends Controller
      */
     public function destroy(string $id)
     {
-        $video = VideoM::delete($id);
+        $video = VideoM::find($id);
+        $video->delete();
+
     }
 }
