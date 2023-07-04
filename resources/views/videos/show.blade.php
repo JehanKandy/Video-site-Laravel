@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <video width="400" controls>
-                    <source src="{{ $video->video }}" type="video/mp4">
+                    <source src="video/{{ $video->video }}" type="video/mp4">
                     Your browser does not support HTML video.
                   </video>
             </div>
