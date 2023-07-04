@@ -77,14 +77,12 @@ class VideoController extends Controller
     public function update(Request $request, string $id)
     {
         $this->validate($request, [
-            'uploader' => 'required',
             'video_title' => 'required|string|max:255',
             'description' => 'required|string',
             'video_tags' => 'required|string|max:50',
         ]);
 
         $video = VideoM::find($id);
-        $video->uploader = $request->uploader;
         $video->video_title = $request->video_title;
         $video->description = $request->description;
         $video->video_tags = $request->video_tags;
