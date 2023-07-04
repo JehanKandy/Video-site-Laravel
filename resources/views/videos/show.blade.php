@@ -2,8 +2,10 @@
 
 <style>
     .tags{
-        padding: 5px;
-        background-color: rgb(47, 101, 218);
+        padding: 5px 10px;
+        background-color: rgb(74, 172, 218);
+        border-radius: 5px;
+        color: white;
     }
 </style>
 
