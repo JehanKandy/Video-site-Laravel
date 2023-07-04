@@ -8,7 +8,7 @@
     <div class="admin-card">
         <a href="{{ url('/videos') }}"><button class="btn btn-primary">Back</button></a><br>
         <hr>
-        <h2>Edit Video</h2>
+        <h2>Edit Video</h2><hr>
         <form action="{{ url('videos/'. $video->id) }}" method="POST">
             @csrf
             @method("PATCH")
@@ -16,8 +16,8 @@
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label for="uploader">Video Uploader</label>
-                        <input type="text" name="add_user" value="{{ $video-> }}" class="form-control" disabled>
-                        <input type="hidden" name="add_user" value="{{ $video->uploder }}">     
+                        <input type="text" name="uploader" value="{{ $video->uploader }}" class="form-control" disabled>
+                        <input type="hidden" name="uploader" value="{{ $video->uploder }}">     
                     </div>
                 </div>
                 <div class="col-lg-6"></div>
