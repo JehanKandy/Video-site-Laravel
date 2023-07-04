@@ -1,5 +1,12 @@
 @extends('layouts.dash')
 
+<style>
+    .tags{
+        padding: 5px;
+        background-color: rgb(47, 101, 218);
+    }
+</style>
+
 @section('content')
     <div class="admin-card">
         <a href="{{ url('/videos') }}"><button class="btn btn-primary">Back</button></a>
@@ -35,7 +42,8 @@
                     $vid_tags = json_decode($video->video_tags);
                 @endphp
                 @foreach ($vid_tags as $tags)
-                    {{ $tags }},
+                    <span class="tags">{{ $tags }}</span>
+                    
                 @endforeach
             </div>
         </div>
