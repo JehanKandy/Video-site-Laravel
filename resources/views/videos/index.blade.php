@@ -20,6 +20,7 @@
             </thead>
             <tbody>
                 @foreach ($video as $vid)
+                <tr>
                     <td><b>{{ $loop->iteration }}</b></td>
                     <td>{{ $vid->uploader }}</td>
                     <td>{{ $vid->video_title }}</td>
@@ -48,6 +49,7 @@
                             </form>                            
                         @endif                            
                     </td>
+                </tr>
                 @endforeach
             </tbody>
         </table>
