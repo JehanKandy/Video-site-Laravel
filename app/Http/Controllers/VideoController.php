@@ -88,7 +88,10 @@ class VideoController extends Controller
         $video->video_title = $request->video_title;
         $video->description = $request->description;
         $video->video_tags = $request->video_tags;
-        
+
+        $video->update();
+
+        return redirect('/videos');
 
 
     }
