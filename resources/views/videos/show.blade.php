@@ -9,7 +9,10 @@
                 <h5>Uploader</h5>
                 <h4>{{ $video->uploader }}</h4>
             </div>
-            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+                <h5>Video Title</h5>
+                <h4>{{ $video->video_title }}</h4>
+            </div>
         </div>
     </div>
 @endsection
