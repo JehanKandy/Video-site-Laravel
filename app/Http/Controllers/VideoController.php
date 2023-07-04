@@ -83,7 +83,13 @@ class VideoController extends Controller
             'video_tags' => 'required|string|max:50',
         ]);
 
+        $video = VideoM::find($id);
+        $video->uploader = $request->uploader;
+        $video->video_title = $request->video_title;
+        $video->description = $request->description;
+        $video->video_tags = $request->video_tags;
         
+
 
     }
 
